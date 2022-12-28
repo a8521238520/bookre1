@@ -1,43 +1,41 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
 
-{% block content %}
-{% load staticfiles %}
-<div class="main-container">
-    <div class="cloud-image">
-        <img src="{% static "app/img/successCloudNew.svg" %}" />
-    </div>
-    <div class="content">
-        <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20Python%20Django%20website%20on%20Azure%20using%20Github%20Actions&hashtags=GithubActions%20%40Azure">
-                <img src="{% static "app/img/tweetThis.svg" %}" />
-            </a>            
-        </div>
-        <div class="content-body">
-            <div class="success-text">Success!</div>
-            <div class="description line-1"> GitHub workflow has been successfully setup</div>
-            <div class="description line-2"> Your Python Django app is up and running on Azure</div>
-        </div>
-    </div>
-</div>
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Get started right away </h2>
-        <p>
-            Clone your code repository and start developing your application on IDE of your choice
-        </p>
-        <p><a class="btn btn-default" href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">Learn more &raquo;</a></p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://th.bing.com/th/id/R.a8a57978cff594049fcb2d823bb6d7a3?rik=rQ3Hn5Fg9omNLw&riu=http%3a%2f%2fwww.formore-maker.com%2fUploadFolder%2f1525752028fcu.png&ehk=XcvZjVbusrotojz9M7hdENj0%2b4E88qwpZi9OQcpNRpU%3d&risl=&pid=ImgRaw&r=0" alt="Bootstrap" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              回首頁
+            </button>
+		<img src="https://th.bing.com/th/id/R.a8a57978cff594049fcb2d823bb6d7a3?rik=rQ3Hn5Fg9omNLw&riu=http%3a%2f%2fwww.formore-maker.com%2fUploadFolder%2f1525752028fcu.png&ehk=XcvZjVbusrotojz9M7hdENj0%2b4E88qwpZi9OQcpNRpU%3d&risl=&pid=ImgRaw&r=0" alt="Bootstrap" height="100">
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li><a class="dropdown-item" target="_blank" rel="noreferrer noopener" href="http://recommend.lib.fcu.edu.tw/weblink/scripts/weblink/Default2.aspx?s=main.aspx">回首頁</a></li>
+              <li><a class="dropdown-item" target="_blank" rel="noreferrer noopener" href="https://web.lib.fcu.edu.tw/library/index.php">回圖書館首頁</a></li>
+              <li><a class="dropdown-item" target="_blank" rel="noreferrer noopener" href="https://www.fcu.edu.tw/">回學校首頁</a></li>        
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-4">
-        <h2>Continuous Delivery</h2>
-        <p>Learn more about all you can do with Github Actions by visiting the documentation</p>
-        <p><a class="btn btn-default" href="https://docs.github.com/en/actions">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Github Repository</h2>
-        <p>Learn more about all you can do with Github by visiting the documentation</p>
-        <p><a class="btn btn-default" href="https://docs.github.com">Learn more &raquo;</a></p>
-    </div>
-</div>
-
-{% endblock %}
+  </nav>
+</body>
+</html>
